@@ -217,6 +217,11 @@
                     getEnabled="EnabledBtInfo"/>
                     <button id="CloneSelectionDown" label="Clone Selection Down" imageMso="ObjectNudgeDown" onAction="ObjectsCloneDown" showLabel="false" keytip="CSB"
                     getEnabled="EnabledBtInfo"/>         
+                    <separator id="SeparatorShapeAdjustments" />
+                    <button id="Copy_Shape_Adjustments" label="Copy Shape Adjustments" imageMso="Copy" onAction="CopyShapeAdjustments" showLabel="false"
+                    screentip="Copy Shape Adjustments" supertip="Copy the yellow adjustment-handle values from one shape."/>
+                    <button id="Paste_Shape_Adjustments" label="Paste Shape Adjustments" imageMso="Paste" onAction="PasteShapeAdjustments" showLabel="false"
+                    screentip="Paste Shape Adjustments" supertip="Apply the copied yellow adjustment-handle values to matching shapes."/>
                 </group>             
                 <group id="GroupAlign" label="Align" imageMso="ObjectsAlignLeftSmart">
                     <control idMso="ObjectsAlignTopSmart" showLabel="false" keytip="AAT"/>
