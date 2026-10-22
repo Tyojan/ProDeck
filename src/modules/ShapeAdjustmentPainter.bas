@@ -71,3 +71,47 @@ Public Sub PasteShapeAdjustments()
                vbInformation, "ProDeck"
     End If
 End Sub
+
+Public Sub Rotate_Right_30(control As IRibbonControl)
+    RotateSelectedShapes 30
+End Sub
+
+Public Sub Rotate_Right_45(control As IRibbonControl)
+    RotateSelectedShapes 45
+End Sub
+
+Public Sub Rotate_Right_60(control As IRibbonControl)
+    RotateSelectedShapes 60
+End Sub
+
+Public Sub Rotate_Left_30(control As IRibbonControl)
+    RotateSelectedShapes -30
+End Sub
+
+Public Sub Rotate_Left_45(control As IRibbonControl)
+    RotateSelectedShapes -45
+End Sub
+
+Public Sub Rotate_Left_60(control As IRibbonControl)
+    RotateSelectedShapes -60
+End Sub
+
+Private Sub RotateSelectedShapes(ByVal degrees As Single)
+    Dim selectedShapes As ShapeRange
+    Dim shapeIndex As Long
+
+    If ActiveWindow.Selection.Type <> ppSelectionShapes Then
+        MsgBox "Select one or more shapes first.", vbExclamation, "ProDeck"
+        Exit Sub
+    End If
+
+    If ActiveWindow.Selection.HasChildShapeRange Then
+        Set selectedShapes = ActiveWindow.Selection.ChildShapeRange
+    Else
+        Set selectedShapes = ActiveWindow.Selection.ShapeRange
+    End If
+
+    For shapeIndex = 1 To selectedShapes.Count
+        selectedShapes(shapeIndex).Rotation = selectedShapes(shapeIndex).Rotation + degrees
+    Next shapeIndex
+End Sub

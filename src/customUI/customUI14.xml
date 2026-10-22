@@ -307,6 +307,13 @@
                 </group >     
                 <group id="GroupOrganize" label="Organize" imageMso="ObjectsGroup"> 
                     <control idMso="ObjectRotateRight90" showLabel="false"  keytip="GOR"/>
+                    <separator id="SeparatorCustomRotate"/>
+                    <button id="Rotate_Right_30" label="Rotate Right 30°" imageMso="ObjectRotateRight90" onAction="Rotate_Right_30" showLabel="false" screentip="Rotate Right 30°"/>
+                    <button id="Rotate_Right_45" label="Rotate Right 45°" imageMso="ObjectRotateRight90" onAction="Rotate_Right_45" showLabel="false" screentip="Rotate Right 45°"/>
+                    <button id="Rotate_Right_60" label="Rotate Right 60°" imageMso="ObjectRotateRight90" onAction="Rotate_Right_60" showLabel="false" screentip="Rotate Right 60°"/>
+                    <button id="Rotate_Left_30" label="Rotate Left 30°" imageMso="ObjectRotateLeft90" onAction="Rotate_Left_30" showLabel="false" screentip="Rotate Left 30°"/>
+                    <button id="Rotate_Left_45" label="Rotate Left 45°" imageMso="ObjectRotateLeft90" onAction="Rotate_Left_45" showLabel="false" screentip="Rotate Left 45°"/>
+                    <button id="Rotate_Left_60" label="Rotate Left 60°" imageMso="ObjectRotateLeft90" onAction="Rotate_Left_60" showLabel="false" screentip="Rotate Left 60°"/>
                     <control idMso="ObjectFlipHorizontal" showLabel="false" keytip="FH"/>             
                     <control idMso="ObjectFlipVertical" showLabel="false" keytip="FV"/>
                     <separator id="SeparatorGroupMove" />    
