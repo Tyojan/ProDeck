@@ -262,6 +262,12 @@
                             getEnabled="EnabledBtInfo"/>
                         </menu>
                     </splitButton>
+                    <button id="Flip_Vertical_Within_Bounds" label="Flip Vertical Within Bounds" imageMso="ObjectsAlignMiddleVerticalSmart" onAction="Flip_Vertical_Within_Bounds" showLabel="false" keytip="FVB"
+                    screentip="Flip Vertically Within Bounds" supertip="Flip two selected objects vertically while keeping the combined top and bottom bounds fixed. The spacing between the objects is preserved."
+                    getEnabled="EnabledBtInfo"/>
+                    <button id="Flip_Horizontal_Within_Bounds" label="Flip Horizontal Within Bounds" imageMso="ObjectsAlignCenterHorizontalSmart" onAction="Flip_Horizontal_Within_Bounds" showLabel="false" keytip="FHB"
+                    screentip="Flip Horizontally Within Bounds" supertip="Flip two selected objects horizontally while keeping the combined left and right bounds fixed. The spacing between the objects is preserved."
+                    getEnabled="EnabledBtInfo"/>
                     <menu id="Stack_Objects" label="Stack Objects" getImage="RibbonObjectGetImage" showLabel="false" keytip="STK"
                     screentip="Stack Objects" supertip="Stack objects based on the position of the first selected object.">             
                         <button id="Stack_Top" label="Stack Above" imageMso="MessagePrevious" onAction="Stack_Top" showLabel="false"

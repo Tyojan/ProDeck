@@ -74,6 +74,10 @@ Public Function RibbonEnableArrange_IsEnabled(ByVal controlId As String, ByRef r
             returnedVal = Ribbon_SelectedShapeOrChildCountAtLeast(2)
         Case "Swap_Positions"
             returnedVal = Ribbon_SelectedShapeOrChildCountEquals(2)
+        Case "Flip_Vertical_Within_Bounds"
+            returnedVal = Ribbon_SelectedShapeOrChildCountEquals(2)
+        Case "Flip_Horizontal_Within_Bounds"
+            returnedVal = Ribbon_SelectedShapeOrChildCountEquals(2)
         Case "Swap_Text"
             returnedVal = Ribbon_CanSwapTextSelection()
         Case "Stack_Top"
